@@ -3,121 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loja Online</title>
+    <title>Loja Online - Chuteiras e Tênis</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     
+    <header>
+        <h1>Sua Loja de Esportes</h1>
+        <nav>
+            <a href="#campo">Campo</a>
+            <a href="#futsal">Futsal</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
 
-    !-- Seção de Produtos -->
-    <section id="produtos" class="produtos">
+    <section id="campo" class="produtos-campo">
         <h2>Chuteira Campo</h2>
-        <div class="produto-container"><
-            <div class="produto">
-                <img src="img/06079115A1.avif" alt="Produto 1">
-                <h3>Produto 1</h3>
-                <p></p>
-                <button onclick="adicionarAoCarrinho('Produto 1')">Adicionar ao Carrinho</button>
+        <div class="produto-container">
+            
+            <div class="produto" data-id="campo-001">
+                <img src="img/06079115A1.avif" alt="Chuteira Campo MaxControl">
+                <h3>MaxControl Speed 1.0</h3>
+                <p class="descricao">Construída para a **velocidade máxima** e toque de bola apurado. Materiais leves e travas estratégicas para tração explosiva em gramados naturais e sintéticos.</p>
+                <p class="preco">R$ 599,99</p> <button onclick="adicionarAoCarrinho('MaxControl Speed 1.0')">Adicionar ao Carrinho</button>
             </div>
-            <div class="produto">
-                <img src="img/281624-2.webp" alt="Produto 2">
-                <h3>Produto 2</h3>
-                <p>R$  499,99</p>
-                <button onclick="adicionarAoCarrinho('Produto 2')">Adicionar ao Carrinho</button>
+            
+            <div class="produto" data-id="campo-002">
+                <img src="img/281624-2.webp" alt="Chuteira Campo Clássica">
+                <h3>Clássica Master V</h3>
+                <p class="descricao">Prioriza o **conforto e a durabilidade**. Ideal para o jogador que busca um ajuste tradicional e consistente controle de bola em qualquer posição.</p>
+                <p class="preco">R$ 499,99</p>
+                <button onclick="adicionarAoCarrinho('Clássica Master V')">Adicionar ao Carrinho</button>
             </div>
-            <div class="produto">
-                <img src="img/chuteira_nike_campo_legend_10_club_preto_azul_16429_1_2a90ed4bc38e869a4afa74aeaf0278cf.webp" alt="Produto 2">
-                <h3>Produto 2</h3>
-                <p>R$ 299,90</p>
-                <button onclick="adicionarAoCarrinho('Produto 2')">Adicionar ao Carrinho</button>
+            
+            <div class="produto" data-id="campo-003">
+                <img src="img/chuteira_nike_campo_legend_10_club_preto_azul_16429_1_2a90ed4bc38e869a4afa74aeaf0278cf.webp" alt="Chuteira Nike Legend Club (Inspiração)">
+                <h3>Legend Club Performance</h3>
+                <p class="descricao">Melhor **custo-benefício** para aprimorar seu jogo. Oferece boa aderência e um cabedal resistente, perfeita para treinos frequentes e jogos amadores.</p>
+                <p class="preco">R$ 299,90</p>
+                <button onclick="adicionarAoCarrinho('Legend Club Performance')">Adicionar ao Carrinho</button>
             </div>
-            <div class="produto">
-                <img src="img/289851-1.webp" alt="Produto 4">
-                <h3>Produto 2</h3>
-                <p>R$ 525,99</p>
-                <button onclick="adicionarAoCarrinho('Produto 4')">Adicionar ao Carrinho</button>
-            </div>
-            <div class="produto">
-                <img src="img/0.webp" alt="Produto 5">
-                <h3>Produto 2</h3>
-                <p>R$ 299,99</p>
-                <button onclick="adicionarAoCarrinho('Produto 5')">Adicionar ao Carrinho</button>
-            </div>
-            <div class="produto">
-                <img src="img/M1350H08A10.avif" alt="Produto 6">
-                <h3>Produto 2</h3>
-                <p>R$899,99
-                </p>
-                <button onclick="adicionarAoCarrinho('Produto 6')">Adicionar ao Carrinho</button>
-            </div>
-            <div class="produto">
-                <img src="img/024787P1A10.jpg" alt="Produto 7">
-                <h3>Produto 2</h3>
-                <p>R$ 659,99</p>
-                <button onclick="adicionarAoCarrinho('Produto 7')">Adicionar ao Carrinho</button>
-            </div>
-
-
-            <!-- Adicionar mais produtos conforme necessário -->
-        </div>
-    </section>
-
-   
--- Seção de Produtos -->
-    <section id="produtos" class="produtos">
-        <h2>Tenis 
-            Futsal</h2>
-        <div class="produto-container"><
-<div class="produto">
-          <div class="produto">
-                <img src="img/chuteira-joma-top-flex-rebound-2301-indoor-black-37-65200d7a44af7-large.jpg" alt="Produto 1">
-                <h3>Produto 2</h3>
-                <p>R$ 589,99</p>
-                <button onclick="adicionarAoCarrinho('Produto 1')">Adicionar ao Carrinho</button>
-            </div>
-            <div class="produto">
-                <img src="img/arrumar_chuteira_futsal_umbro_pro_5_bump_dragon_year_vermelha_masculina_3321_1_e21d4c053880a2a0993e3dcb716973ca.webp" alt="Produto 2">
-                <h3>Produto 2</h3>
-                <p>R$ 562;49</p>
-                <button onclick="adicionarAoCarrinho('Produto 2')">Adicionar ao Carrinho</button>
-            </div>
-            <div class="produto">
-                <img src="img/Umbro-Chuteira-PRO-5-BUMP-STP-U03FB00356-529-VerdeBrancoDourado-Sint--3-.webp" alt="Produto 3">
-                <h3>Produto 2</h3>
-                <p>R$ 525,00</p>
-                <button onclick="adicionarAoCarrinho('Produto 3')">Adicionar ao Carrinho</button>
-            </div>
-            <div class="produto">
-                <img src="img/02650415A8.avif" alt="Produto 4">
-                <h3>Produto 2</h3>
-                <p>R$ 366,00 </p>
-                <button onclick="adicionarAoCarrinho('Produto 4')">Adicionar ao Carrinho</button>
-            </div>
-            <div class="produto">
-                <img src="img/chuteira-futsal-penalty-max-1000-ecoknit--2--42dzw7vvpf.webp" alt="Produto 5">
-                <h3>Produto 2</h3>
-                <p>R$ 289,99</p>
-                <button onclick="adicionarAoCarrinho('Produto 5')">Adicionar ao Carrinho</button>
-            </div>
-            </div>
-            </div>
-    </section>
-    
-    <section id="sobre" class="sobre">
-        <h2>Sobre Nós</h2>
-        <p>Somos uma loja online especializada em produtos de qualidade. Nosso objetivo é fornecer o melhor para nossos clientes!</p>
-    </section>
-
-    <section id="contato" class="contato">
-        <h2>Contato</h2>
-        <p>Email: importsES.com</p>
-        <p>Telefone: (11) 1234-5678</p>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 LojaOnline. Todos os direitos reservados.</p>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
-</html>
+            
+            <div class="produto"
