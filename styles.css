@@ -1,0 +1,8 @@
+/* --- Grid de Produtos --- */
+.product-grid {
+    display: grid;
+    /* 3 colunas em telas maiores, mínimo de 300px por item */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 30px;
+    padding-bottom: 60px;
+}
